@@ -1,0 +1,105 @@
+* {
+	box-sizing: border-box;
+}
+
+body {
+	background-color: #3F4045;
+	background-size: cover;
+	background-repeat: no-repeat;
+	font-family: 'Roboto', sans-serif;
+	background: #283048;
+	background: -webkit-linear-gradient(to right, #859398, #283048);
+	background: linear-gradient(to right, #859398, #283048);
+}
+
+/*-------Jukebox Styling-------*/
+
+.jukebox {
+	width: 900px;
+	max-width: 80%;
+	height: 600px;
+	max-height: 80%;
+	margin: 0 auto;
+	margin-top: 50px;
+	background-color: rgba(0,0,0,0.5);
+}
+
+.controls {
+	width: 300px;
+	max-width: 80%;
+	height: 100px;
+	max-height: 10%;
+	background-color: red;
+	margin: 0 auto; 
+	background-color: rgba(0,0,0,0.2);
+}
+
+.button {
+	width: 64px;
+	height: 70px;
+	max-height: 100%;
+	background-color: rgba(0,0,0,0);
+	display: inline-flex;
+	justify-content: space-around;
+}
+
+.button-container {
+	width: 210px;
+	height: 70px;
+	max-height: 100%;
+	margin: 0 auto;
+}
+
+.song-display {
+	width: 300px;
+	max-width: 90%;
+	height: 300px;
+	max-height: 40%;
+	background-color: red;
+	margin: 0 auto;
+}
+
+.playlist {
+	width: 600px;
+	max-width: 80%;
+	height: 300px;
+	max-height: 40%;
+	background-color: red;
+	margin: 0 auto;
+}
+
+.playButton {
+	background-image: url("assets/icons/png/play.png");
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+.pauseButton {
+	background-image: url("assets/icons/png/pause.png");
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+.skipButton {
+	background-image: url("assets/icons/png/skip.png");
+	background-size: cover;
+	background-repeat: 100% 100% center;
+}
+
+/*-------video styling-------*/
+
+.background-video { 
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: -100;
+  -ms-transform: translateX(-50%) translateY(-50%);
+  -moz-transform: translateX(-50%) translateY(-50%);
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
+  background-size: cover; 
+}
