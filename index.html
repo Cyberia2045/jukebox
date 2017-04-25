@@ -2,9 +2,38 @@
 <html>
 <head>
 	<title>The Jukebox</title>
-	<script type="text/javascript" href="styles.css"></script>
+	<link rel="stylesheet" type="text/css" href="styles.css">
 </head>
 <body>
+
+<video playsinline autoplay muted loop poster id="background-video" class="background-video">
+	<source src="assets/videos/nebula.mp4" type="video/webm">
+</video>
+
+		<audio id="player">
+			<source id="mp3" type="audio/mp3"></source>
+		</audio>
+
+	<div class="jukebox">
+		<div class="controls">
+			<div class="button-container">
+				<div class="pauseButton button" id="pauseButton"></div>
+				<div class="playButton button" id="playButton"></div>
+				<div class="skipButton button" id="skipButton"></div>
+			</div>
+		</div>
+
+		<div class="song-display">
+			<h2 class="song"></h2>
+			<h2 class="band"></h2>
+			<h2 class="album"></h2>
+		</div>
+
+		<div class="playlist">
+			<p class="playlist-item"></p>
+		</div>
+
+	</div>
 
 	<script type="text/javascript" src="scripts.js"></script>
 </body>
