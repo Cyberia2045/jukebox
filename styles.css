@@ -127,8 +127,9 @@ body {
 }
 
 .playlist-item {
-	background-color: rgba(0,0,0,0.8);
+	background-color: rgba(0,0,0,0.5);
 	border: 1px solid white;
+	color: white;
 }
 
 /*-------load styling-------*/
@@ -145,17 +146,18 @@ body {
 	border-radius: 10px;
 	background-color: rgba(255,255,255,0.2);
 	text-align: center;
+	color: white;
 }
 
-.load-song {
+.load-button {
 	display: inline-block;
 	width:30%;
+	height: auto;
 	border-radius: 10px;
 	background-color: rgba(0,0,0,0.7);
 	text-align: center;
 	color: firebrick;
 }
-
 
 
 

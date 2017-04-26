@@ -73,21 +73,22 @@ function skip() {
 	}
 }
 
-var song = document.getElementById("song").value; 
-var band = document.getElementById("band").value;
-var album = document.getElementById("album").value;
-var songFile = document.getElementById("file-name").value;
-var artFile = document.getElementById("art-file").value;
 var loadButton = document.getElementById("load-song");
 
-// loadButton.addEventListener("click", load);
+loadButton.addEventListener("click", load);
 
-// function load() {
-// 	var newSong = new Song(band, album, song, songFile, artFile);
+function load() {
+	var song = document.getElementById("song").value; 
+	var band = document.getElementById("band").value;
+	var album = document.getElementById("album").value;
+	var songFile = document.getElementById("file-name").value;
+	var artFile = document.getElementById("art-file").value;
+	
+		var newSong = new Song(band, album, song, songFile, artFile);
 
-// 	songs.push(newSong);
-// 	console.log(songs);
-// }
+	songs.push(newSong);
+	console.log(songs);
+}
 
 var playlistItem = document.getElementsByClassName("playlist-item")[0];
 
