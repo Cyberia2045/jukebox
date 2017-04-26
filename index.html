@@ -24,13 +24,25 @@
 		</div>
 
 		<div class="song-display">
-			<h2 class="song"></h2>
-			<h2 class="band"></h2>
-			<h2 class="album"></h2>
+			<img class="albumArt"></img>
+			<h2 class="display-text"></h2>
+			<h2 class="display-text"></h2>
+			<h2 class="display-text"></h2>
 		</div>
 
 		<div class="playlist">
-			<p class="playlist-item"></p>
+			<div class="item-container">
+				<p class="playlist-item"></p>
+			</div>
+		</div>
+
+		<div class="load-container">
+				<input id="song" class="load" placeholder="song"></input>
+				<input id="band" class="load" placeholder="band"></input>
+				<input id="album" class="load" placeholder="album"></input>
+				<input id="file-name" class="load" placeholder="Song Path"></input>
+				<input id="art-file" class="load" placeholder="Album Art Path"></input>
+				<button id="load-song" class="load-button">Load</button>
 		</div>
 
 	</div>
