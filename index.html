@@ -2,6 +2,8 @@
 <html>
 <head>
 	<title>The Jukebox</title>
+	<meta name="viewport" content="width=device-width" />
+
 	<link rel="stylesheet" type="text/css" href="styles.css">
 </head>
 <body>
@@ -36,17 +38,29 @@
 			</div>
 		</div>
 
+		<div class="modal-button">Add to Playlist</div>
+
+		<div class="soundCloud-container">
+			<input id="soundCloud" class="soundCloud" placeholder="SoundCloud Search"></input>
+			<button class="soundCloud-button">Search</button>
+		</div>
+
 		<div class="load-container">
+			<p class="load-text">Load Your Favorite Songs</p>
+			<div class="load-subcontainer">
 				<input id="song" class="load" placeholder="song"></input>
 				<input id="band" class="load" placeholder="band"></input>
 				<input id="album" class="load" placeholder="album"></input>
 				<input id="file-name" class="load" placeholder="Song Path"></input>
 				<input id="art-file" class="load" placeholder="Album Art Path"></input>
-				<button id="load-song" class="load-button">Load</button>
+				<button id="load-song" class="load-button">Load Song</button>
+			</div>
 		</div>
 
 	</div>
 
+	<script src="https://connect.soundcloud.com/sdk/sdk-3.1.2.js"></script>
 	<script type="text/javascript" src="scripts.js"></script>
+	
 </body>
 </html>

@@ -73,7 +73,18 @@ function skip() {
 	}
 }
 
+// -------Jukebox Load & List Functionality-------
+
 var loadButton = document.getElementById("load-song");
+var modal = document.getElementsByClassName("modal-button")[0];
+var loadContainer = document.getElementsByClassName("load-container")[0];
+
+modal.addEventListener("click", displayModal);
+
+function displayModal() {
+	loadContainer.style.display = "block";
+	modal.style.display = "none";
+}
 
 loadButton.addEventListener("click", load);
 
@@ -84,10 +95,13 @@ function load() {
 	var songFile = document.getElementById("file-name").value;
 	var artFile = document.getElementById("art-file").value;
 	
-		var newSong = new Song(band, album, song, songFile, artFile);
+	var newSong = new Song(band, album, song, songFile, artFile);
 
 	songs.push(newSong);
 	console.log(songs);
+
+	loadContainer.style.display = "none";
+	modal.style.display = "block";
 }
 
 var playlistItem = document.getElementsByClassName("playlist-item")[0];
