@@ -33,6 +33,8 @@ function Song(band, album, song, fileName, artFile) {
 	this.artFile = artFile;
 }
 
+
+
 // ----------Jukebox Functionality-------------
 
 var jukebox = new Jukebox();
@@ -113,7 +115,6 @@ function songList(playlist) {
 }
 
 songList(songs);
-
 
 
 
